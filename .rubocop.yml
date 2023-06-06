@@ -1,0 +1,24 @@
+inherit_gem:
+  rubocop-github:
+    - config/default_edge.yml
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - '.git/**/*'
+    - 'vendor/**/*'
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Style/Documentation:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - '**/*.gemspec'
