@@ -1,0 +1,2 @@
+gem build omniauth-douyin.gemspec
+gem install ./omniauth-douyin-1.0.0.gem
