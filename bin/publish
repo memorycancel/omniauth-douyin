@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 gem build omniauth-douyin.gemspec
-gem install ./omniauth-douyin-1.0.0.gem
+gem push *.gem
+rm *.gem

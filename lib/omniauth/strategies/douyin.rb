@@ -61,15 +61,15 @@ module OmniAuth
         super.tap do |params|
           params[:scope] ||= DEFAULT_SCOPE
           params[:response_type] = 'code'
-          params.delete(:client_id)
-          params[:client_key] = options.client_id
+          params.delete(:client_key)
+          params[:client_key] = options.client_key
         end
       end
 
       def token_params
         super.tap do |params|
-          params.delete(:client_id)
-          params[:client_key] = options.client_id
+          params.delete(:client_key)
+          params[:client_key] = options.client_key
         end
       end
 
